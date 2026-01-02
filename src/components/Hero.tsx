@@ -58,8 +58,11 @@ export default function Hero() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="/images/hero.jpg"
-                alt="Modern deniz manzaralı daire"
+                alt="Sahile 25 metre mesafede modern deniz manzaralı günlük kiralık 1+1 daire"
                 className="w-full h-[500px] object-cover"
+                width="800"
+                height="500"
+                fetchPriority="high"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
                 <p className="text-white text-lg font-semibold">Modern ve Konforlu</p>
