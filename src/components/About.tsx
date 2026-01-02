@@ -98,8 +98,11 @@ export default function About() {
             <div className="relative">
               <img
                 src="/images/about.jpg"
-                alt="Daire iç mekan"
+                alt="Daire iç mekan - Modern ve konforlu 1+1 daire iç görünümü"
                 className="rounded-xl shadow-xl"
+                loading="lazy"
+                width="600"
+                height="400"
               />
             </div>
           </div>

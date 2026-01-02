@@ -66,6 +66,9 @@ export default function Gallery() {
                 src={image.url}
                 alt={image.title}
                 className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+                loading="lazy"
+                width="400"
+                height="256"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition flex items-end">
                 <p className="text-white font-semibold p-4">{image.title}</p>

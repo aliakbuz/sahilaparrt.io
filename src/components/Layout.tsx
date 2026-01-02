@@ -1,7 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, MessageCircle, Home } from 'lucide-react';
+import { Menu, X, Phone, MessageCircle, Home, BookOpen } from 'lucide-react';
 import { useState } from 'react';
 import Footer from './Footer';
+import Breadcrumb from './Breadcrumb';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -68,6 +69,14 @@ export default function Layout({ children }: LayoutProps) {
                 }`}
               >
                 İletişim
+              </Link>
+              <Link
+                to="/blog"
+                className={`transition ${
+                  isActive('/blog') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'
+                }`}
+              >
+                Blog
               </Link>
             </div>
 
@@ -147,6 +156,15 @@ export default function Layout({ children }: LayoutProps) {
               >
                 İletişim
               </Link>
+              <Link
+                to="/blog"
+                onClick={() => setIsMenuOpen(false)}
+                className={`block w-full text-left py-2 transition ${
+                  isActive('/blog') ? 'text-blue-600 font-semibold' : 'text-gray-700 hover:text-blue-600'
+                }`}
+              >
+                Blog
+              </Link>
               <div className="flex flex-col space-y-2 pt-2">
                 <a
                   href="tel:+905396304955"
@@ -171,6 +189,7 @@ export default function Layout({ children }: LayoutProps) {
       </nav>
 
       <main className="pt-16">
+        <Breadcrumb />
         {children}
       </main>
 
