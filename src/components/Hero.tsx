@@ -2,7 +2,7 @@ import { MapPin, Phone, MessageCircle } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="anasayfa" className="relative bg-gradient-to-br from-blue-50 to-white min-h-screen flex items-center">
+    <section className="relative bg-gradient-to-br from-blue-50 to-white min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">

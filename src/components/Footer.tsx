@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Home, MapPin, Phone, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
@@ -8,10 +9,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
+            <Link to="/" className="flex items-center space-x-2 mb-4">
               <Home className="w-6 h-6 text-blue-400" />
               <span className="font-bold text-xl">Sahil Daire</span>
-            </div>
+            </Link>
             <p className="text-gray-400 leading-relaxed">
               Denize 25 metre mesafede, modern ve konforlu günlük kiralık 1+1 daire.
               Unutulmaz bir tatil deneyimi için bize ulaşın.
@@ -22,19 +23,19 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Hızlı Bağlantılar</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="#anasayfa" className="hover:text-white transition">Anasayfa</a>
+                <Link to="/" className="hover:text-white transition">Anasayfa</Link>
               </li>
               <li>
-                <a href="#hakkinda" className="hover:text-white transition">Daire Hakkında</a>
+                <Link to="/hakkinda" className="hover:text-white transition">Daire Hakkında</Link>
               </li>
               <li>
-                <a href="#galeri" className="hover:text-white transition">Galeri</a>
+                <Link to="/galeri" className="hover:text-white transition">Galeri</Link>
               </li>
               <li>
-                <a href="#konum" className="hover:text-white transition">Konum</a>
+                <Link to="/konum" className="hover:text-white transition">Konum</Link>
               </li>
               <li>
-                <a href="#iletisim" className="hover:text-white transition">İletişim</a>
+                <Link to="/iletisim" className="hover:text-white transition">İletişim</Link>
               </li>
             </ul>
           </div>
